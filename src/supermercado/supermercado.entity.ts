@@ -19,5 +19,5 @@ export class SupermercadoEntity {
   paginaWeb: string;
 
   @ManyToMany(() => CiudadEntity, (ciudad) => ciudad.supermercados)
-  ciudades: CiudadEntity[];
+  ciudades?: CiudadEntity[];
 }

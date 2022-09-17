@@ -74,7 +74,7 @@ export class CiudadService {
     ) {
       throw new BusinessLogicException(
         'El país al que pertenece la ciudad debe ser Argentina, Ecuador ó Paraguay',
-        BusinessError.NOT_FOUND,
+        BusinessError.BAD_REQUEST,
       );
     }
   }
