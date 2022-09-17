@@ -102,7 +102,7 @@ export class CiudadSupermercadoService {
   async updateSupermarketsFromCity(
     ciudadId: string,
     supermercados: SupermercadoEntity[],
-  ): Promise<SupermercadoEntity> {
+  ): Promise<CiudadEntity> {
     const ciudad: CiudadEntity = await this.ciudadRepository.findOne({
       where: { id: ciudadId },
       relations: ['supermercados'],
